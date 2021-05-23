@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Dimensions for text sizes and lengths-->
+<resources>
+    <dimen name="score">64sp</dimen>
+    <dimen name="team_name">24sp</dimen>
+    <dimen name="padding_top">16dp</dimen>
+    <dimen name="line">1dp</dimen>
+    <dimen name="equal_spacing">0dp</dimen>
+</resources>

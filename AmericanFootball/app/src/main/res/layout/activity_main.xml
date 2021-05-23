@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_100"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/equal_spacing"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextLook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/team_a"
+                android:textSize="@dimen/team_name" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/TextLook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textSize="@dimen/score" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="touchdownForA"
+                android:text="@string/touchdown" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fieldGoalForA"
+                android:text="@string/field_goal" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="safetyForA"
+                android:text="@string/safety" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="extra1ForA"
+                android:text="@string/extra_points_1" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="extra2ForA"
+                android:text="@string/extra_points_2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_top"
+            android:background="@color/purple_500" />
+
+        <LinearLayout
+            android:layout_width="@dimen/equal_spacing"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextLook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b"
+                android:textSize="@dimen/team_name" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/TextLook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textSize="@dimen/score" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="touchdownForB"
+                android:text="@string/touchdown" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fieldGoalForB"
+                android:text="@string/field_goal" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="safetyForB"
+                android:text="@string/safety" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="extra1ForB"
+                android:text="@string/extra_points_1" />
+
+            <Button
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="extra2ForB"
+                android:text="@string/extra_points_2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScores"
+        android:text="@string/reset" />
+
+</RelativeLayout>
